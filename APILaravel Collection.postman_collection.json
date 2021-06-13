@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "e4dd952f-1f88-4005-bdd4-702228012448",
+		"name": "APILaravel Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obter Instituições",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/instituicoes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"instituicoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Convênios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/convenios",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"convenios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Simular Crédito",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"valor_emprestimo\" : \"1000000.00\",\r\n    \"instituicoes\" : [],\r\n    \"convenios\" : [],\r\n    \"parcela\" : \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/simularCredito",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"simularCredito"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
